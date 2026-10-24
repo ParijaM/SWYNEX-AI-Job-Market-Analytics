@@ -154,19 +154,61 @@ The cleaned dataset preserves legitimate missing information while removing form
 
 \---
 
-## Upcoming Tasks
+## Task 2: Exploratory Data Analysis (EDA)
 
-### Task 2 – Exploratory Data Analysis
+### Overview
+Performed exploratory data analysis on the cleaned AI Job Market 2026 dataset to identify patterns, trends, and relationships in job postings, AI-related roles, and salary information.
 
-Explore the cleaned dataset and identify meaningful patterns, relationships, and trends.
+### Analysis Performed
+- Analyzed the dataset structure, descriptive statistics, and missing values.
+- Compared AI-related and non-AI-related job postings.
+- Explored job posting distributions by country and job category.
+- Examined contract types and working arrangements.
+- Analyzed salary patterns by AI status, country, and job category.
+- Identified potential salary outliers using the Interquartile Range (IQR) method.
+- Investigated relationships between AI relevance, location, job category, and salary.
 
-### Task 3 – Interactive Dashboard
+### Key Findings
+- The dataset contains **1,696 job postings** across **23 job categories**.
+- Approximately **60.2%** of postings are marked as AI-related.
+- IT is the largest job category, with **695 postings**.
+- The United States has **750 postings**, followed by the United Kingdom with **746** and India with **200**.
+- Among postings with available salary data, AI-related roles show a higher average salary than non-AI-related roles in this dataset.
+- The IQR method identified **67 potential salary outliers** among the **1,513 postings with available salary information**.
 
-Develop an interactive dashboard to present important job-market insights visually.
+### Tools and Libraries
+Python, Pandas, NumPy, Matplotlib, Seaborn, and Jupyter Notebook.
 
-### Task 4 – Final Data Analytics Project
+### Data Limitations
+Salary information is missing for some postings, and contract-related fields contain substantial missing values. Salary outliers may influence averages, and country-level comparisons require consistent currency and salary-period definitions.
 
-Combine the analysis and visualizations into a complete data analytics project with meaningful findings and conclusions.
+### Deliverable
+- Notebook: `notebooks/02_Exploratory_Data_Analysis.ipynb`
+- Input dataset: `data/cleaned/ai_job_market_cleaned.csv`
+
+\---
+
+## Task 3: Interactive Power BI Dashboard
+
+### Overview
+Created an interactive Power BI dashboard to explore the AI Job Market 2026 dataset and communicate key findings about job postings, AI-related roles, job categories, geographic distribution, and salary patterns.
+
+### Dashboard Features
+- **KPI cards:** Total job postings, AI-related jobs, AI job share, and average salary.
+- **Job-market analysis:** Job postings by country and job category.
+- **AI-related analysis:** Comparison of AI-related and non-AI-related job postings.
+- **Salary analysis:** Average salary by AI status and job category.
+- **Interactive filters:** Country, job category, AI relevance, and contract type.
+
+### Tools Used
+Power BI, Python, Pandas, NumPy, Matplotlib, and Seaborn.
+
+### Data Considerations
+Salary metrics use records with available salary information. Missing employment fields and potential salary outliers should be considered when interpreting results. Cross-country salary comparisons require consistent currency and salary-period definitions.
+
+### Deliverables
+- Power BI report: `dashboard/AI_Job_Market_2026_Dashboard.pbix`
+- Dashboard screenshot: `reports/AI_Job_Market_2026_Dashboard.png`
 
 \---
 
